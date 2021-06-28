@@ -17,47 +17,90 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the move?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Db-js-SGD">
-                                <rect key="frame" x="45.666666666666657" y="44" width="322.66666666666674" height="56.666666666666657"/>
+                                <rect key="frame" x="44.333333333333343" y="44" width="325.66666666666663" height="58.666666666666657"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="systemGray2Color"/>
+                                <size key="shadowOffset" width="3" height="-2"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="v1j-tE-Kcj">
-                                <rect key="frame" x="20" y="457" width="330.33333333333331" height="51"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hfi-aB-JyC" userLabel="pieChartBox" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="77" y="258" width="260" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v1j-tE-Kcj">
+                                <rect key="frame" x="5.3333333333333428" y="591.66666666666663" width="403.33333333333326" height="33"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oC-Gh-54X">
-                                        <rect key="frame" x="0.0" y="0.0" width="110.33333333333333" height="51"/>
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oC-Gh-54X" userLabel="Monitor">
+                                        <rect key="frame" x="0.0" y="0.0" width="128.33333333333334" height="33"/>
                                         <color key="backgroundColor" red="0.83306627980000003" green="0.59032084370000004" blue="0.68344064630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
-                                        <state key="normal" title="Monitor" image="heart.text.square" catalog="system">
-                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                        <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Monitor  " image="heart.text.square" catalog="system">
+                                            <color key="titleColor" red="0.96848052740097046" green="0.886426436343424" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Monitor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MCm-da-qRN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zey-1j-2GX">
-                                        <rect key="frame" x="138.33333333333334" y="0.0" width="78" height="51"/>
+                                        <rect key="frame" x="138.33333333333331" y="0.0" width="127" height="33"/>
                                         <color key="backgroundColor" red="0.61608777239048285" green="0.93661221590909094" blue="0.7215821324111692" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                         <color key="tintColor" systemColor="systemIndigoColor"/>
-                                        <state key="normal" title="Steps" image="figure.walk" catalog="system">
+                                        <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Steps      " image="figure.walk" catalog="system">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Steps:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gyk-mf-Kv1"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hG7-ew-Z67">
-                                        <rect key="frame" x="244.33333333333337" y="0.0" width="86" height="51"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hG7-ew-Z67">
+                                        <rect key="frame" x="275.33333333333337" y="0.0" width="128" height="33"/>
+                                        <color key="backgroundColor" red="0.94333755970001221" green="0.779100263147811" blue="0.60609988297120598" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Report    " image="doc.richtext.fill.he" catalog="system">
+                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Report:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFa-Qo-yXp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOf-Zt-quo" userLabel="lineChartBox" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="122" width="260" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rwF-NP-ysa" userLabel="barChartBox" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="44" y="343" width="260" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9Db-js-SGD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Xa-Xp-EpV"/>
+                            <constraint firstItem="v1j-tE-Kcj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FeU-hJ-Al9"/>
+                            <constraint firstItem="v1j-tE-Kcj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="240" id="HyB-th-tTB"/>
                             <constraint firstItem="9Db-js-SGD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="44" id="TPF-6H-sEa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="barChartBox" destination="rwF-NP-ysa" id="U9Y-L0-6fk"/>
+                        <outlet property="lineChartBox" destination="LOf-Zt-quo" id="9eh-RJ-cLX"/>
+                        <outlet property="pieChartBox" destination="Hfi-aB-JyC" id="YWp-wg-GBG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,6 +108,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="doc.richtext.fill.he" catalog="system" width="115" height="128"/>
         <image name="figure.walk" catalog="system" width="95" height="128"/>
         <image name="heart.text.square" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
@@ -73,14 +117,17 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

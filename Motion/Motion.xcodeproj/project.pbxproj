@@ -13,6 +13,7 @@
 		004EBD642685615800B6F55F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004EBD622685615800B6F55F /* Main.storyboard */; };
 		004EBD662685615900B6F55F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004EBD652685615900B6F55F /* Assets.xcassets */; };
 		004EBD692685615900B6F55F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004EBD672685615900B6F55F /* LaunchScreen.storyboard */; };
+		4FC46F7C1E55AED8AA130269 /* Pods_Motion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8D366B1DF529DFE7275A85 /* Pods_Motion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		004EBD652685615900B6F55F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		004EBD682685615900B6F55F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		004EBD6A2685615900B6F55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78CFCD4D79C9AB81C1CFE172 /* Pods-Motion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion.release.xcconfig"; path = "Target Support Files/Pods-Motion/Pods-Motion.release.xcconfig"; sourceTree = "<group>"; };
+		E500D184620EFC6CA6392090 /* Pods-Motion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motion.debug.xcconfig"; path = "Target Support Files/Pods-Motion/Pods-Motion.debug.xcconfig"; sourceTree = "<group>"; };
+		EA8D366B1DF529DFE7275A85 /* Pods_Motion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FC46F7C1E55AED8AA130269 /* Pods_Motion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				004EBD5B2685615800B6F55F /* Motion */,
 				004EBD5A2685615800B6F55F /* Products */,
+				08BF2CD237517EE9C43421FE /* Pods */,
+				F69DAEF80300EE6656B65FFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Motion;
 			sourceTree = "<group>";
 		};
+		08BF2CD237517EE9C43421FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E500D184620EFC6CA6392090 /* Pods-Motion.debug.xcconfig */,
+				78CFCD4D79C9AB81C1CFE172 /* Pods-Motion.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F69DAEF80300EE6656B65FFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA8D366B1DF529DFE7275A85 /* Pods_Motion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 004EBD6D2685615900B6F55F /* Build configuration list for PBXNativeTarget "Motion" */;
 			buildPhases = (
+				76D2DFB5A7E80EA965C50F19 /* [CP] Check Pods Manifest.lock */,
 				004EBD552685615800B6F55F /* Sources */,
 				004EBD562685615800B6F55F /* Frameworks */,
 				004EBD572685615800B6F55F /* Resources */,
+				C76909429564440CE92A79DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76D2DFB5A7E80EA965C50F19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Motion-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C76909429564440CE92A79DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motion/Pods-Motion-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motion/Pods-Motion-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Motion/Pods-Motion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		004EBD552685615800B6F55F /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		004EBD6E2685615900B6F55F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E500D184620EFC6CA6392090 /* Pods-Motion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		004EBD6F2685615900B6F55F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78CFCD4D79C9AB81C1CFE172 /* Pods-Motion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
