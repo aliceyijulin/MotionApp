@@ -16,6 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wAI-IR-HP6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.80507983314670584" green="0.80873759094810693" blue="1" alpha="0.66910699503311255" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the move?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Db-js-SGD">
                                 <rect key="frame" x="44.333333333333343" y="44" width="325.66666666666663" height="58.666666666666657"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
@@ -25,7 +30,12 @@
                                 <size key="shadowOffset" width="3" height="-2"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hfi-aB-JyC" userLabel="pieChartBox" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="77" y="258" width="260" height="220"/>
+                                <rect key="frame" x="214" y="262" width="194" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOf-Zt-quo" userLabel="lineChartBox" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="119" width="196" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -76,13 +86,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOf-Zt-quo" userLabel="lineChartBox" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="20" y="122" width="260" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rwF-NP-ysa" userLabel="barChartBox" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="44" y="343" width="260" height="220"/>
+                                <rect key="frame" x="22" y="427" width="208" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -91,9 +96,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9Db-js-SGD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Xa-Xp-EpV"/>
+                            <constraint firstAttribute="bottom" secondItem="wAI-IR-HP6" secondAttribute="bottom" id="7qd-f7-jHr"/>
                             <constraint firstItem="v1j-tE-Kcj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FeU-hJ-Al9"/>
                             <constraint firstItem="v1j-tE-Kcj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="240" id="HyB-th-tTB"/>
+                            <constraint firstAttribute="trailing" secondItem="wAI-IR-HP6" secondAttribute="trailing" id="Riw-vz-Y2i"/>
                             <constraint firstItem="9Db-js-SGD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="44" id="TPF-6H-sEa"/>
+                            <constraint firstItem="wAI-IR-HP6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="e3F-Ff-M6X"/>
+                            <constraint firstItem="wAI-IR-HP6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zKp-4I-L9Q"/>
                         </constraints>
                     </view>
                     <connections>

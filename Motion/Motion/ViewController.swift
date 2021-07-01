@@ -63,14 +63,14 @@ class ViewController: UIViewController {
         let dataSet = LineChartDataSet(entries: entries, label: "Line Chart")
         
         // Customize graph settings to your liking
-        dataSet.colors = ChartColorTemplates.pastel()
+        dataSet.colors = ChartColorTemplates.joyful()
         
         // Make object that will be added to the chart and set it to the variable in the Storyboard
         let data = LineChartData(dataSet: dataSet)
         lineChartBox.data = data
         
         // Add settings for the chartBox
-        lineChartBox.chartDescription?.text = "Pi Values"
+        lineChartBox.chartDescription?.text = "Line Values"
         
         // Animations
         lineChartBox.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .linear)
@@ -104,7 +104,7 @@ class ViewController: UIViewController {
         let dataSet = PieChartDataSet(entries: entries, label: "Pie Chart")
         
         // Customize graph settings to your liking
-        dataSet.colors = ChartColorTemplates.pastel()
+        dataSet.colors = ChartColorTemplates.joyful()
         
         // Make object that will be added to the chart and set it to the variable in the Storyboard
         let data = PieChartData(dataSet: dataSet)
@@ -145,14 +145,14 @@ class ViewController: UIViewController {
         let dataSet = BarChartDataSet(entries: entries, label: "Bar Chart")
         
         // Customize graph settings to your liking
-        dataSet.colors = ChartColorTemplates.pastel()
+        dataSet.colors = ChartColorTemplates.joyful()
         
         // Make object that will be added to the chart and set it to the variable in the Storyboard
         let data = BarChartData(dataSet: dataSet)
         barChartBox.data = data
         
         // Add settings for the chartBox
-        barChartBox.chartDescription?.text = "Pi Values"
+        barChartBox.chartDescription?.text = "Bar Values"
         
         // Animations
         barChartBox.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .linear)
