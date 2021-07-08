@@ -26,15 +26,12 @@ class ViewController: UIViewController {
         graphPieChart(dataArray: data)
         graphBarChart(dataArray: data)
 
-        
         lineChartBox.isHidden = true
         barChartBox.isHidden = true
         pieChartBox.isHidden = true
         
-        
     }
-    
-    
+        
     func graphLineChart(dataArray: [Int]) {
         // Make lineChartBox size have width and height both equal to width of screen
         lineChartBox.frame = CGRect(x: 0, y: 0,
@@ -72,8 +69,6 @@ class ViewController: UIViewController {
         // Add settings for the chartBox
         lineChartBox.chartDescription?.text = "Line Values"
         
-        // Animations
-        lineChartBox.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .linear)
     }
 
     func graphPieChart(dataArray: [Int]) {
