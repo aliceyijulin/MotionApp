@@ -8,31 +8,29 @@
 import UIKit
 import Charts
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController  {
+
 
     @IBOutlet weak var lineChartBox: LineChartView!
-    
-   
     @IBOutlet weak var barChartBox: BarChartView!
-    
-    
     @IBOutlet weak var pieChartBox: PieChartView!
     
+    
+   
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
-        let data = [1, 3, 5, 7, 9, 2, 4, 6, 8]
-        graphLineChart(dataArray: data)
-        graphPieChart(dataArray: data)
-        graphBarChart(dataArray: data)
-
         lineChartBox.isHidden = true
         barChartBox.isHidden = true
         pieChartBox.isHidden = true
-        
     }
+    
         
-    func graphLineChart(dataArray: [Int]) {
+    func graphLineChart(dataArray: [Int])
+    {
         // Make lineChartBox size have width and height both equal to width of screen
         lineChartBox.frame = CGRect(x: 0, y: 0,
                                     width: self.view.frame.size.width,
@@ -90,10 +88,10 @@ class ViewController: UIViewController {
         
         // For every element in given dataset
         // Set the X and Y coordinates in a data chart entry and add to the entries list
-        for i in 0..<dataArray.count {
+            for i in 0..<dataArray.count {
             let value = ChartDataEntry(x: Double(i), y: Double(dataArray[i]))
             entries.append(value)
-        }
+            }
         
         // Use the entries object and a label string to make a LineChartDataSet object
         let dataSet = PieChartDataSet(entries: entries, label: "Pie Chart")
@@ -157,18 +155,17 @@ class ViewController: UIViewController {
         lineChartBox.isHidden = false
         barChartBox.isHidden = true
         pieChartBox.isHidden = true
-    }
+        }
         
     @IBAction func Steps(_ sender: Any) {
         lineChartBox.isHidden = true
         barChartBox.isHidden = false
         pieChartBox.isHidden = true
-    }
+        }
     
     @IBAction func Report(_ sender: Any) {
         lineChartBox.isHidden = true
         barChartBox.isHidden = true
         pieChartBox.isHidden = false
-    }
+        }
 }
-

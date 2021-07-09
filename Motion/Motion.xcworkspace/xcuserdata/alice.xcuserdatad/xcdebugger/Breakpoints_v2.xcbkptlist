@@ -14,10 +14,118 @@
             filePath = "Motion/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "graphPieChart(dataArray:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motion/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "bluefruitPeripheral"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - 7b5cefaf54ea048e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Motion.ViewController.barChartBox.getter : Swift.Optional&lt;Charts.BarChartView&gt;"
+                  moduleName = "Motion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alice/Desktop/MotionApp/Motion/Motion/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - d07da0678d130082"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Motion.ViewController.barChartBox.setter : Swift.Optional&lt;Charts.BarChartView&gt;"
+                  moduleName = "Motion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alice/Desktop/MotionApp/Motion/Motion/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - 3f7dc0bf0b8749a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Motion.ViewController.barChartBox.modify : Swift.Optional&lt;Charts.BarChartView&gt;"
+                  moduleName = "Motion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alice/Desktop/MotionApp/Motion/Motion/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - b666c0e99936e490"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Motion.ViewController.barChartBox.modify : Swift.Optional&lt;Charts.BarChartView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Motion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alice/Desktop/MotionApp/Motion/Motion/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - b0d25dff68cb2b70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Motion.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Motion.ViewController"
+                  moduleName = "Motion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alice/Desktop/MotionApp/Motion/Motion/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - 21410ebc05883d06"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Motion.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Motion.ViewController&gt;"
+                  moduleName = "Motion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alice/Desktop/MotionApp/Motion/Motion/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
