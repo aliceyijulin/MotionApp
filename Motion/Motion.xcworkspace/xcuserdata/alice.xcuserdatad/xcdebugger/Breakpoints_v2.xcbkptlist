@@ -14,8 +14,8 @@
             filePath = "Motion/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "graphPieChart(dataArray:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,13 +30,13 @@
             filePath = "Motion/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "bluefruitPeripheral"
-            landmarkType = "24">
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "ViewController"
+            landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - 7b5cefaf54ea048e"
+                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - 7b5cefaf54ea027f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -46,12 +46,12 @@
                   urlString = "file:///Users/alice/Desktop/MotionApp/Motion/Motion/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
                   offsetFromSymbolStart = "100">
                </Location>
                <Location
-                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - d07da0678d130082"
+                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - d07da0678d130673"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -61,8 +61,8 @@
                   urlString = "file:///Users/alice/Desktop/MotionApp/Motion/Motion/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
                   offsetFromSymbolStart = "144">
                </Location>
                <Location
@@ -81,7 +81,7 @@
                   offsetFromSymbolStart = "48">
                </Location>
                <Location
-                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - b666c0e99936e490"
+                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - b666c0e99936e261"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -91,12 +91,12 @@
                   urlString = "file:///Users/alice/Desktop/MotionApp/Motion/Motion/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
                   offsetFromSymbolStart = "52">
                </Location>
                <Location
-                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - b0d25dff68cb2b70"
+                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - b0d25dff68cb2d81"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -106,12 +106,12 @@
                   urlString = "file:///Users/alice/Desktop/MotionApp/Motion/Motion/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "152">
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "336">
                </Location>
                <Location
-                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - 21410ebc05883d06"
+                  uuid = "A0405F83-02A8-4B37-A567-FC161DEFFA45 - 21410ebc05883bf7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -121,9 +121,9 @@
                   urlString = "file:///Users/alice/Desktop/MotionApp/Motion/Motion/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "128">
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "312">
                </Location>
             </Locations>
          </BreakpointContent>
