@@ -262,27 +262,6 @@ class ViewController: UIViewController  {
         }
      }
     
-//    func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
-//
-//          var characteristicASCIIValue = NSString()
-//
-//          guard characteristic == rxCharacteristic,
-//
-//          let characteristicValue = characteristic.value,
-//          let ASCIIstring = NSString(data: characteristicValue, encoding: String.Encoding.utf8.rawValue) else { return }
-//
-//        characteristicASCIIValue = ASCIIstring
-//        let str: String = ASCIIstring as String
-//        var a:Int! = Int(str)
-//
-//        data.append(a)
-//
-//        graphLineChart(dataArray: data)
-//        graphPieChart(dataArray: data)
-//        graphBarChart(dataArray: data)
-//
-//          print("Value Recieved: \((characteristicASCIIValue as String))")
-//    }
     
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic,
                         error: Error?) {
@@ -305,112 +284,25 @@ class ViewController: UIViewController  {
             if (receivedData.count > 100) {
                 receivedData.removeFirst(receivedData.count-100)
             }
+        
             if (showGraphIsOn && receivedData.count > 0) {
-                displayLineGraph(dataDisplaying: receivedData)
+                print(receivedData)
+                graphLineChart(dataArray: receivedData)
             }
             if (showGraphIsOn && receivedData.count > 0) {
-                displayBarGraph(dataDisplaying: receivedData)
+                graphBarChart(dataArray: receivedData)
             }
             if (showGraphIsOn && receivedData.count > 0) {
-                displayPieGraph(dataDisplaying: receivedData)
+                graphPieChart(dataArray: receivedData)
             }
+        
             NotificationCenter.default.post(name:NSNotification.Name(rawValue: "Notify"), object: self)
         }
     
-    // Graph the line chart dataset to storyboard
-       func displayLineGraph(dataDisplaying: [Int]) {
-           // Array that will eventually be displayed on the graph.
-           var lineChartEntry  = [ChartDataEntry]()
-
-           // For every element in given dataset
-           // Set the X and Y status in a data chart entry
-           // and add to the entry object
-           for i in 0..<dataDisplaying.count {
-               let value = ChartDataEntry(x: Double(i), y: Double(dataDisplaying[i]))
-               lineChartEntry.append(value)
-           }
-
-           // Convert lineChartEntry to a LineChartDataSet
-           let line1 = LineChartDataSet(entries: lineChartEntry, label: "Heart Rate Data")
-           
-           // Customize graph settings to your liking
-           line1.drawCirclesEnabled = false
-           line1.colors = ChartColorTemplates.joyful()
-
-           // Make object that will be added to the chart
-           // and set it to the variable in the Storyboard
-           let lineData = LineChartData(dataSet: line1)
-        
-           //chartBox.dragEnabled = true
-           lineChartBox.setScaleEnabled(true)
-           lineChartBox.pinchZoomEnabled = true
-           lineChartBox.data = lineData
-       }
-    
-    // Graph the bar chart dataset to storyboard
-       func displayBarGraph(dataDisplaying: [Int]) {
-           // Array that will eventually be displayed on the graph.
-           var barChartEntry  = [ChartDataEntry]()
-
-           // For every element in given dataset
-           // Set the X and Y status in a data chart entry
-           // and add to the entry object
-           for i in 0..<dataDisplaying.count {
-               let value = ChartDataEntry(x: Double(i), y: Double(dataDisplaying[i]))
-               barChartEntry.append(value)
-           }
-
-           // Convert lineChartEntry to a LineChartDataSet
-           let bar1 = BarChartDataSet(entries: barChartEntry, label: "Steps")
-           
-           // Customize graph settings to your liking
-           //bar1.drawCirclesEnabled = false
-           bar1.colors = ChartColorTemplates.joyful()
-
-           // Make object that will be added to the chart
-           // and set it to the variable in the Storyboard
-           let barData = BarChartData(dataSet: bar1)
-        
-           //chartBox.dragEnabled = true
-           barChartBox.setScaleEnabled(true)
-           barChartBox.pinchZoomEnabled = true
-           barChartBox.data = barData
-       }
-    
-    // Graph the pie chart dataset to storyboard
-       func displayPieGraph(dataDisplaying: [Int]) {
-           // Array that will eventually be displayed on the graph.
-           var pieChartEntry  = [ChartDataEntry]()
-
-           // For every element in given dataset
-           // Set the X and Y status in a data chart entry
-           // and add to the entry object
-           for i in 0..<dataDisplaying.count {
-               let value = ChartDataEntry(x: Double(i), y: Double(dataDisplaying[i]))
-               pieChartEntry.append(value)
-           }
-
-           // Convert pieChartEntry to a pieChartDataSet
-           let pie1 = PieChartDataSet(entries: pieChartEntry, label: "Report")
-           
-           // Customize graph settings to your liking
-            //pie1.drawCirclesEnabled = false
-            pie1.colors = ChartColorTemplates.joyful()
-
-           // Make object that will be added to the chart
-           // and set it to the variable in the Storyboard
-           let pieData = PieChartData(dataSet: pie1)
-        
-           //chartBox.dragEnabled = true
-           //pieChartBox.setScaleEnabled(true)
-          //pieChartBox.pinchZoomEnabled = true
-        
-           pieChartBox.data = pieData
-       }
     
 //    func clearGraph() {
 //          let nullGraph = [Int]()
-//          displayGraph(dataDisplaying: nullGraph)
+//          displayLineGraph(dataDisplaying: nullGraph)
 //      }
     
     func writeOutgoingValue(data: String){
